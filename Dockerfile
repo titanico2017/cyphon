@@ -43,9 +43,9 @@ RUN apk add -U --repository http://dl-5.alpinelinux.org/alpine/edge/testing/ \
       proj4-dev \
       py-gdal \
       su-exec \
- && ln -s /usr/lib/libgdal.so.20 /usr/lib/libgdal.so \
- && ln -s /usr/lib/libgeos_c.so.1 /usr/lib/libgeos_c.so \
- && apk add -U \
+RUN ln -s /usr/lib/libgdal.so.20 /usr/lib/libgdal.so
+RUN ln -s /usr/lib/libgeos_c.so.1 /usr/lib/libgeos_c.so
+RUN apk add -U \
       --repository http://dl-5.alpinelinux.org/alpine/edge/testing/ \
       -t build-deps \
       build-base \
@@ -57,10 +57,10 @@ RUN apk add -U --repository http://dl-5.alpinelinux.org/alpine/edge/testing/ \
       python3-dev \
       jpeg-dev \
       zlib-dev \
-      tiff-dev \
- && pip install -r $CYPHON_HOME/requirements.txt \
- && apk del build-deps \
- && python -m nltk.downloader -d /usr/local/share/nltk_data punkt wordnet
+      tiff-dev
+RUN pip install -r $CYPHON_HOME/requirements.txt
+RUN apk del build-deps 
+RUN python -m nltk.downloader -d /usr/local/share/nltk_data punkt wordnet
 
 # create unprivileged user
 RUN addgroup -S -g $GID cyphon && adduser -S -G cyphon -u $UID cyphon

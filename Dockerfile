@@ -53,7 +53,7 @@ RUN apk add -U --no-cache \
       -t build-deps \
       build-base \
       libffi-dev \
-      openssl-dev \
+      libressl-dev \
       linux-headers \
       musl-dev \
       postgis \

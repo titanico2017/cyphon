@@ -4,8 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/). This project adheres to [Semantic Versioning](http://semver.org/).
 
-<a name=""></a>
-## [Unreleased]
+<a name="1.6.5"></a>
+## [1.6.5](https://github.com/dunbarcyber/cyphon/compare/1.6.4...1.6.5) (2018-06-11)
+
+### Fixed
+
+- **Dockerfile**: changed apk packages to download libressl instead of openssl due to multiple packages upgrading from open to libre. ([75172dc](https://github.com/dunbarcyber/cyphon/commit/75172dc))
+
+### Changed
+
+- **requirements.txt**: removed cryptography from dependencies due to it depending on openssl and since it is not used in the project anymore. ([f707446](https://github.com/dunbarcyber/cyphon/commit/f707446))
 
 <a name="1.6.4"></a>
 ## [1.6.4](https://github.com/dunbarcyber/cyphon/compare/1.6.3...1.6.4) (2018-04-03)

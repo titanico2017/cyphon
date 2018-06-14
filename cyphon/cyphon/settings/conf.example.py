@@ -54,6 +54,11 @@ PROJ_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 HOME_DIR = os.path.dirname(PROJ_DIR)
 KEYS_DIR = os.path.join(HOME_DIR, 'keys')
 
+ALERTS = {
+    # Disables searching for alert data in a collection if there is no
+    # alert data
+    'DISABLE_COLLECTION_SEARCH': False
+}
 
 APPUSERS = {
     'CUSTOM_FILTER_BACKENDS': [],

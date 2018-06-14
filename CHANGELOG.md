@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/). This project adheres to [Semantic Versioning](http://semver.org/).
 
+<a name="1.6.6"></a>
+## [1.6.6](https://github.com/dunbarcyber/cyphon/compare/1.6.5...1.6.6) (2018-06-14)
+
+### Changed
+
+- **alerts.models** + **cyphon.settings.conf**: added conditional setting ALERTS.DISABLE_COLLECTION_SEARCH to determine if alert should search backend storage for missing alert data. ([09c246b](https://github.com/dunbarcyber/cyphon/commit/09c246b))
+
 <a name="1.6.5"></a>
 ## [1.6.5](https://github.com/dunbarcyber/cyphon/compare/1.6.4...1.6.5) (2018-06-11)
 

@@ -30,7 +30,7 @@ html5lib==1.0.1
 httmock==1.2.6
 httplib2==0.11.3
 jira==1.0.15
-kombu==4.1.0
+kombu==4.2.1
 langdetect==1.0.7
 maxminddb==1.4.1
 nltk==3.2.5

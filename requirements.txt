@@ -9,7 +9,7 @@ celery==4.2.0
 django-autocomplete-light==2.3.3  # pyup: >=2.0.0,<3.0.0
 django-ckeditor==5.6.1
 django-constance==2.2.0
-django-extensions==2.0.7
+django-extensions==2.1.0
 django-filter==1.1.0
 django-grappelli==2.11.1
 django-mailbox==4.7.1

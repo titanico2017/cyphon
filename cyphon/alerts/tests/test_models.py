@@ -222,6 +222,7 @@ class AlertContentDateTestCase(AlertModelTestCase):
         Tests the save method of an Alert when the teaser data for the
         original document includes a date that's a timestamp string.
         """
+        self.alert.data = None
         self.alert.save()
         utc = datetime.timezone.utc
         actual = self.alert.content_date
@@ -413,6 +414,13 @@ class AlertSavedDataTestCase(AlertModelTestCase):
         actual = self.alert.saved_data
         expected = DOC_W_DATE
         self.assertEqual(actual, expected)
+
+    @patch_find_by_id(DOC_W_DATE)
+    def test_disable_searching_setting(self):
+        with self.settings(ALERTS={'DISABLE_COLLECTION_SEARCH': True}):
+            actual = self.alert.saved_data
+            expected = {}
+            self.assertEqual(actual, expected)
 
 
 class GetDataStrTestCase(AlertModelTestCase):

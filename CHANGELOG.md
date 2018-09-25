@@ -4,13 +4,34 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/). This project adheres to [Semantic Versioning](http://semver.org/).
 
-<a name=""></a>
-## [Unreleased]
+<a name="1.6.6"></a>
+## [1.6.6](https://github.com/dunbarcyber/cyphon/compare/1.6.5...1.6.6) (2018-06-14)
+
+### Changed
+
+- **alerts.models** + **cyphon.settings.conf**: added conditional setting ALERTS.DISABLE_COLLECTION_SEARCH to determine if alert should search backend storage for missing alert data. ([09c246b](https://github.com/dunbarcyber/cyphon/commit/09c246b))
+
+<a name="1.6.5"></a>
+## [1.6.5](https://github.com/dunbarcyber/cyphon/compare/1.6.4...1.6.5) (2018-06-11)
+
+### Fixed
+
+- **Dockerfile**: changed apk packages to download libressl instead of openssl due to multiple packages upgrading from open to libre. ([75172dc](https://github.com/dunbarcyber/cyphon/commit/75172dc))
+
+### Changed
+
+- **requirements.txt**: removed cryptography from dependencies due to it depending on openssl and since it is not used in the project anymore. ([f707446](https://github.com/dunbarcyber/cyphon/commit/f707446))
 
 <a name="1.6.4"></a>
 ## [1.6.4](https://github.com/dunbarcyber/cyphon/compare/1.6.3...1.6.4) (2018-04-03)
 
+### Added
+
 - **cyphon.settings.conf**: added CYCLOPS.API_TIMEOUT to settings file ([249c0ef](https://github.com/dunbarcyber/cyphon/commit/249c0ef))
+
+### Fixed
+
+- **setup.py**: fixed failing CI build due to pip 10 update moving all it's internal API to `._internal` ([92417d1](https://github.com/dunbarcyber/cyphon/commit/92417d1))
 
 <a name="1.6.3"></a>
 ## [1.6.3](https://github.com/dunbarcyber/cyphon/compare/1.6.2...1.6.3) (2018-03-30)

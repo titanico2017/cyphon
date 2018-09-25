@@ -517,6 +517,11 @@ class Alert(models.Model):
         If successful, returns a data dictionary of the document.
         If not, returns an empty dictionary.
         """
+        has_setting = hasattr(settings, 'ALERTS')
+
+        if has_setting and settings.ALERTS.get('DISABLE_COLLECTION_SEARCH'):
+            return {}
+
         if self.distillery and self.doc_id:
             data = self.distillery.find_by_id(self.doc_id)
             if data:

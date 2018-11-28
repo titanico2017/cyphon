@@ -193,7 +193,7 @@ def id_query(doc_id):
         A query for a document with the given `doc_id`.
 
     """
-    return {'id': doc_id, 'refresh': True, 'ignore': 404}
+    return {'id': doc_id, 'ignore': 404}
 
 
 def ids_and_value_filter(doc_ids, fields, value):

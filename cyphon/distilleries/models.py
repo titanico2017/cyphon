@@ -620,6 +620,8 @@ class Distillery(models.Model):
             The id of the saved document.
 
         """
+        if self.is_shell:
+            return ''
         doc = self._add_date(doc_obj.data)
         doc = self._add_distillery_info(doc)
         if doc_obj.doc_id and doc_obj.collection:

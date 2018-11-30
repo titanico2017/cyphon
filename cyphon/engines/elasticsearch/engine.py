@@ -334,7 +334,7 @@ class ElasticsearchEngine(Engine):
         documents from the index associated with the Engine.
         """
         params = self._params_for_search
-        params.update({'body': {'ids': doc_ids}})
+        params.update({'body': {'ids': doc_ids}, 'refresh': True})
         results = ELASTICSEARCH.mget(**params)
         return es_results.get_found_docs(results)
 
@@ -500,7 +500,7 @@ class ElasticsearchEngine(Engine):
 
         """
         params = self._params_for_insert
-        params.update({'body': doc})
+        params.update({'body': doc, 'refresh': True})
         if not self._index_exists():
             self._create_index()
         doc = ELASTICSEARCH.index(**params)

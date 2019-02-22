@@ -106,8 +106,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Cyphon'
-copyright = '2017-2018 Dunbar Security Solutions, Inc.'
-author = 'Leila Hadj-Chikh'
+copyright = '2017-2019 ControlScan, Inc.'
+author = 'Cyphon'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -289,7 +289,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Cyphon.tex', 'Cyphon Documentation',
-     'Dunbar Security Solutions', 'manual'),
+     'ControlScan', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

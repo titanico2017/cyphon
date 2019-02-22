@@ -50,7 +50,7 @@ The raw data for this tweet might look like this::
             "name": "The Cyphon Project",
             "screen_name": "cyphonproject",
             "location": "Maryland, USA",
-            "description": "An open platform for incident management and response. Maintained by @DunbarCyber.",
+            "description": "An open platform for incident management and response. Maintained by @ControScan.",
             "url": "https://t.co/LJgJSY1cwl",
             "entities": {
                 "url": {

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright 2017 Dunbar Cybersecurity.
+# Copyright 2017 ControlScan.
 #
 # This file is part of Cyphon Engine.
 #

@@ -2,7 +2,7 @@
 # Dockerfile to run a Django-based web application
 # Based on a Python 3.6 image
 #
-# Copyright 2017-2018 Dunbar Security Solutions, Inc.
+# Copyright 2017-2019 ControlScan, Inc.
 #
 # This file is part of Cyphon Engine.
 #
@@ -22,7 +22,7 @@
 
 FROM python:3.6-alpine
 
-MAINTAINER Leila Hadj-Chikh <leila.hadj-chikh@dunbarsecured.com>
+MAINTAINER Cyphon <cyphondev@controlscan.com>
 
 ARG UID=1000
 ARG GID=1000

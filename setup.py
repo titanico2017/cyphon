@@ -1,4 +1,4 @@
-# Copyright 2017-2018 Dunbar Security Solutions, Inc.
+# Copyright 2017-2019 ControlScan, Inc.
 #
 # This file is part of Cyphon Engine.
 #
@@ -50,8 +50,8 @@ setup(
     description='Cyphon Engine',
     long_description=README,
     url='https://cyphon.io/',
-    author='Dunbar Cybersecurity',
-    author_email='leila.hadj-chikh@dunbarsecured.com',
+    author='ControlScan',
+    author_email='cyphondev@controlscan.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',

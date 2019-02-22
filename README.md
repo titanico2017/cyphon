@@ -80,4 +80,4 @@ Consult our [official documentation](http://cyphon.readthedocs.io/en/latest/inde
 
 ## License
 
-Cyphon is free software and available for personal or professional use. The Cyphon Project is maintained by [Dunbar Cybersecurity](http://dunbararmored.com/security-solutions/cybersecurity) and is distributed under a dual license. The Cyphon Engine is distributed under the [GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.en.html). Cyclops is subject to a non-commercial use license.
+Cyphon is free software and available for personal or professional use. The Cyphon Project is maintained by [ControlScan](https://www.controlscan.com/security/managed-detection-response-mdr/) and is distributed under a dual license. The Cyphon Engine is distributed under the [GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.en.html). Cyclops is subject to a non-commercial use license.

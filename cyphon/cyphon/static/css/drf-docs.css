@@ -1,5 +1,5 @@
 /**
- * Copyright 2017-2018 Dunbar Security Solutions, Inc.
+ * Copyright 2017-2019 ControlScan, Inc.
  * 
  * This file is part of Cyphon Engine.
  * 

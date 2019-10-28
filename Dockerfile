@@ -42,7 +42,7 @@ RUN apk add -U --no-cache \
       binutils \
       gdal \
       postgis \
-      proj4-dev \
+      proj-dev \
       py-gdal \
       su-exec \
 && ln -s /usr/lib/libgdal.so.20 /usr/lib/libgdal.so \

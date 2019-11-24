@@ -39,6 +39,7 @@ COPY requirements.txt $CYPHON_HOME/requirements.txt
 RUN apk add -U --no-cache \
       --repository http://dl-5.alpinelinux.org/alpine/edge/main/ \
       --repository http://dl-5.alpinelinux.org/alpine/edge/testing/ \
+      --repository http://dl-5.alpinelinux.org/alpine/edge/community/ \
       binutils \
       gdal \
       postgis \
@@ -50,6 +51,7 @@ RUN apk add -U --no-cache \
 && apk add -U --no-cache \
       --repository http://dl-5.alpinelinux.org/alpine/edge/main/ \
       --repository http://dl-5.alpinelinux.org/alpine/edge/testing/ \
+      --repository http://dl-5.alpinelinux.org/alpine/edge/community/ \      
       -t build-deps \
       build-base \
       libffi-dev \

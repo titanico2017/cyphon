@@ -44,7 +44,7 @@ RUN apk add -U --no-cache \
       gdal \
       postgis \
       proj-dev \
-      py-gdal \
+      py3-gdal \
       su-exec \
 && ln -s /usr/lib/libgdal.so.20 /usr/lib/libgdal.so \
 && ln -s /usr/lib/libgeos_c.so.1 /usr/lib/libgeos_c.so \
